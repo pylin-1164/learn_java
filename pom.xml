@@ -24,5 +24,6 @@
   </dependencies>
   <modules>
     <module>redis_session</module>
+    <module>word</module>
   </modules>
 </project>
