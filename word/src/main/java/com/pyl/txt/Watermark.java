@@ -16,6 +16,10 @@ import com.pyl.util.zerowidth.ZeroWidthToCode;
 
 /**
  * 通过零宽字符方式给txt文件添加水印
+ * <p>
+ * 使用零宽字符，比如零宽不连接符或零宽空格，就有可能在文本中嵌入看不见的指纹，且这些指纹经过复制粘贴过程依然留存。为什么此text非彼text?因为某个“text”之间有不可见的零宽字符。
+ * 正如英国研究员汤姆·罗斯所言，我们可以将想插入的信息都转换成二进制，然后用一系列零宽字符来表示这些二进制位，这样就能在文本中嵌入看不见的信息了。
+ * </p>
  * 校验字符中的水印地址：https://umpox.github.io/zero-width-detection/
  * @author pyl
  *
