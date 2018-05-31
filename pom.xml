@@ -25,5 +25,8 @@
   <modules>
     <module>redis_session</module>
     <module>word</module>
+    <module>dubbo_api</module>
+    <module>dubbo_provide</module>
+    <module>dubbo_consumer</module>
   </modules>
 </project>
