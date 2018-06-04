@@ -6,3 +6,7 @@
    ### word   office文件相关操作
    >   目前支持对xls/xlsx/docx/txt添加水印。
    
+---
+   ### dubbo[api consumer provide]
+   >   springboot+dubbo+zookeeper 是一种高性能，基于Java的开源RPC框架。由于dubbo只有JAVA版本，若和第三方厂商进行远程调用受到语言的局限性。
+   
