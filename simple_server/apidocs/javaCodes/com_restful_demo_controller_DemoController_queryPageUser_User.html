@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>User</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" rel="stylesheet">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class User implements Serializable{
+
+    private String username; //用户名
+    private String cnname; //中文名
+    private int sex; //性别【0:男，1：女】
+    private UserPro userPro; //用户属性
+
+    @JSONField(name="username")
+    public String getUsername(){
+        return username;
+    }
+
+    @JSONField(name="username")
+    public void setUsername(String username){
+        this.username = username;
+    }
+
+    @JSONField(name="cnname")
+    public String getCnname(){
+        return cnname;
+    }
+
+    @JSONField(name="cnname")
+    public void setCnname(String cnname){
+        this.cnname = cnname;
+    }
+
+    @JSONField(name="sex")
+    public int getSex(){
+        return sex;
+    }
+
+    @JSONField(name="sex")
+    public void setSex(int sex){
+        this.sex = sex;
+    }
+
+    @JSONField(name="userPro")
+    public UserPro getUserPro(){
+        return userPro;
+    }
+
+    @JSONField(name="userPro")
+    public void setUserPro(UserPro userPro){
+        this.userPro = userPro;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class UserPro implements Serializable{
+
+    private String idcard; //身份证
+    private String address; //家庭地址
+    private int age; //年龄
+
+    @JSONField(name="idcard")
+    public String getIdcard(){
+        return idcard;
+    }
+
+    @JSONField(name="idcard")
+    public void setIdcard(String idcard){
+        this.idcard = idcard;
+    }
+
+    @JSONField(name="address")
+    public String getAddress(){
+        return address;
+    }
+
+    @JSONField(name="address")
+    public void setAddress(String address){
+        this.address = address;
+    }
+
+    @JSONField(name="age")
+    public int getAge(){
+        return age;
+    }
+
+    @JSONField(name="age")
+    public void setAge(int age){
+        this.age = age;
+    }
+
+}
+</pre>
+
+
+
+</body>
+</html>
