@@ -12,5 +12,5 @@
    
    
 ---
-   ### restful[simple_server]
+   ### simple_server[restful]
    >    轻量级restful接口服务端，无需tomcat部署启动。通过RestfulStart启动接口，使用ApiDocRunner可以自动生成接口文档模板，修改了GenericControllerParser源码以支持blade-mvc框架下无法定义参数是否必填属性问题。
