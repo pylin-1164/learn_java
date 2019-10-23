@@ -1,9 +1,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.restful.demo</groupId>
+	<parent>
+		<groupId>pyl</groupId>
+		<artifactId>learn</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
 	<artifactId>simple_server</artifactId>
+	<name>Restful Maven Jar</name>
+	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
+	<url>http://maven.apache.org</url>
 
 	<dependencies>
 		<dependency>
@@ -44,7 +52,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.restful.demo.RestfulDemo</mainClass> <!-- 指定入口类路径 -->
+							<mainClass>com.restful.demo.controller.NettyStart</mainClass> <!-- 指定入口类路径 -->
 						</manifest>
 					</archive>
 					<descriptorRefs>
