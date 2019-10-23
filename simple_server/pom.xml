@@ -52,7 +52,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.restful.demo.controller.NettyStart</mainClass> <!-- 指定入口类路径 -->
+							<mainClass>com.restful.demo.controller.RestfulStart</mainClass> <!-- 指定入口类路径 -->
 						</manifest>
 					</archive>
 					<descriptorRefs>
